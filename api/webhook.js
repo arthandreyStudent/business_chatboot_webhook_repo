@@ -7,7 +7,7 @@ const app = express();
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN || 'pscx_mvp_2025';
 
 // Facebook sends a GET request here when you first set up the webhook
-app.get('/api/webhook', (req, res) => {
+app.get('/', (req, res) => {
   const mode = req.query['hub.mode'];
   const token = req.query['hub.verify_token'];
   const challenge = req.query['hub.challenge'];
