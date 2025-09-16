@@ -4,7 +4,7 @@ const serverless = require('serverless-http');
 
 const app = express();
 
-const VERIFY_TOKEN = process.env.VERIFY_TOKEN || 'my_verify_token';
+const VERIFY_TOKEN = process.env.VERIFY_TOKEN || 'pscx_mvp_2025';
 
 // Facebook sends a GET request here when you first set up the webhook
 app.get('/api/webhook', (req, res) => {
